@@ -20,7 +20,7 @@ async def end_point1(request: Request):
              "Authorization" : "Bearer a44f5d93-4f06-4d6f-873b-e96d7945e48f" 
                 }
             data = data = {
-                "userId":str(list_items),
+                "userId":str(list_items[i]['id']),
                 "eventName" : "stop_alert_sent",
                 "eventData":
                 {
